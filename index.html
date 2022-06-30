@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cheatsheet Concept</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <!-- Bulma Version 0.9.0-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/css/OverlayScrollbars.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://kingsora.github.io/OverlayScrollbars/etc/os-theme-thin-dark.css"
+    />
+    <link rel="stylesheet" href="../css/prism.css" />
+    <link rel="stylesheet" href="../css/cheatsheet.css" />
+    <script
+      src="https://kit.fontawesome.com/7dc3015a44.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <div class="columns">
+          <div class="column is-12">
+            <div class="container content">
+              <i class="is-large fas fa-universal-access"></i>
+              <i class="is-large fas fa-code"></i>
+              <h1 class="title">Accesibilidad Web</h1>
+              <h3 class="subtitle">
+                Página informativa sobre el componente de accesibilidad.
+              </h3>
+              <a
+                href="https://drive.google.com/file/d/1wO-AKmpawZiHsCwb6dCu1J_pNsNIZjKb/view?usp=sharing"
+                target="_blank"
+                class="button is-primary is-large"
+              >
+                <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>Leer instructivo funcional</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-3">
+            <aside class="is-medium menu">
+              <p class="menu-label">Items</p>
+              <ul class="menu-list">
+                <li class="is-right">
+                  <a href="#head" class="is-active"
+                    ><i class="fab fa-html5"></i> Tag Head</a
+                  >
+                </li>
+                <li>
+                  <a href="#body" class="is-active"
+                    ><i class="fab fa-html5"></i> Tag Body</a
+                  >
+                </li>
+                <li>
+                  <a href="#download" class="is-active"
+                    ><i class="fas fa-download"></i> Descarga</a
+                  >
+                </li>
+              </ul>
+            </aside>
+          </div>
+          <div class="column is-9">
+            <div class="content is-medium">
+              <h3 class="title is-3">Instrucciones de instalación:</h3>
+              <div class="box">
+                <h4 id="head" class="title is-3">
+                  Dentro del tag &lt;head&gt;:
+                </h4>
+                <article class="message is-primary">
+                  <span class="icon has-text-primary">
+                    <i class="fab fa-html5"></i>
+                  </span>
+                  <div class="message-body">
+                    Insertar las siguientes líneas de código:
+                  </div>
+                </article>
+                <pre>
+                  <code class="language-javascript">
+                  &lt;script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin&gt;&lt;/script&gt;
+                  &lt;script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin&gt;&lt;/script&gt;
+                  </code>
+                </pre>
+              </div>
+              <div class="box">
+                <h4 id="body" class="title is-3">
+                  Dentro del tag &lt;body&gt;:
+                </h4>
+                <article class="message is-primary">
+                  <span class="icon has-text-primary">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  <div class="message-body">
+                    Insertar las siguientes líneas de código:
+                  </div>
+                </article>
+                <pre>
+                  <code class="language-javascript">
+                    &lt;div id="accessibility"&gt;&lt;/div&gt;
+                    &lt;script src="./js/accessibility.min.js"&gt;&lt;/script&gt;
+                  </code>
+                </pre>
+              </div>
+              <h3 id="download" class="title is-3">Dentro del servidor:</h3>
+              <div class="box">
+                <article class="message is-primary">
+                  <span class="icon has-text-primary">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  <div class="message-body">
+                    Descargar el siguiente zip y descomprimirlo en el servidor,
+                    son las dependencias del componente:
+                  </div>
+                </article>
+                <div class="container content">
+                  <a
+                    href="https://drive.google.com/file/d/1II3WyFdhUq2qHrbv4WyrVDq2mmXK3_CA/view?usp=sharing"
+                    target="_blank"
+                    class="button is-primary is-large"
+                  >
+                    <span>Descargar</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <section class="section">
+        <div class="container">
+          <div class="columns is-multiline">
+            <div class="column is-one-third">
+              <article class="notification media has-background-white">
+                <figure class="media-left">
+                  <span class="icon">
+                    <i class="has-text-warning fas fa-columns fa-lg"></i>
+                  </span>
+                </figure>
+                <div class="media-content">
+                  <div class="content">
+                    <h1 class="title is-size-4">Compatibilidad</h1>
+                    <p class="is-size-5 subtitle">
+                      Optimice la <strong>compatibilidad</strong> con los
+                      navegadores actuales y futuros incluyendo tecnologías de
+                      ayuda al usuario.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="column is-one-third">
+              <article class="notification has-background-white media">
+                <figure class="media-left">
+                  <span class="icon has-text-info">
+                    <i class="fab fa-lg fa-readme"></i>
+                  </span>
+                </figure>
+                <div class="media-content">
+                  <div class="content">
+                    <h1 class="title is-size-4">Legibilidad</h1>
+                    <p class="is-size-5 subtitle">
+                      Asegúrese de que el contenido de texto es
+                      <strong>legible</strong> y fácilmente comprensible para
+                      sus usuarios.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="column is-one-third">
+              <article class="notification has-background-white media">
+                <figure class="media-left">
+                  <span class="icon has-text-danger">
+                    <i class="fas fa-lg fa-mouse-pointer"></i>
+                  </span>
+                </figure>
+                <div class="media-content">
+                  <div class="content">
+                    <h1 class="title is-size-4">Predictibilidad</h1>
+                    <p class="is-size-5 subtitle">
+                      Haga que sus páginas Web aparezcan y funcionen de una
+                      forma predecible por sus usuarios.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="column is-one-third">
+              <article class="notification has-background-white media">
+                <figure class="media-left">
+                  <span class="icon has-text-grey">
+                    <i class="fas fa-lg fa-arrows-alt"></i>
+                  </span>
+                </figure>
+                <div class="media-content">
+                  <div class="content">
+                    <h1 class="title is-size-4">Adaptabilidad</h1>
+                    <p class="is-size-5 subtitle">
+                      Fácil de <strong>adaptarse</strong> a los distintos sitios
+                      web
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="column is-one-third">
+              <article class="notification has-background-white media">
+                <figure class="media-left">
+                  <span class="icon has-text-primary">
+                    <i class="fas fa-lg fa-eye"></i>
+                  </span>
+                </figure>
+                <div class="media-content">
+                  <div class="content">
+                    <h1 class="title is-size-4">Distinguible</h1>
+                    <p class="is-size-5 subtitle">
+                      Mejora la <strong>visualizacion</strong> del contenido
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="column is-one-third">
+              <article class="notification has-background-white media">
+                <figure class="media-left">
+                  <span class="icon has-text-danger">
+                    <i class="fas fa-lg fa-universal-access"></i>
+                  </span>
+                </figure>
+                <div class="media-content">
+                  <div class="content">
+                    <h1 class="title is-size-4">Accesible</h1>
+                    <p class="is-size-5 subtitle">
+                      Promover la <strong>accesibilidad</strong> de la
+                      información
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <div class="columns is-mobile is-centered">
+        <div class="field is-grouped is-grouped-multiline">
+          <div class="control">
+            <div class="tags has-addons">
+              <a
+                class="tag is-link"
+                href="https://github.com/BulmaTemplates/bulma-templates"
+                >Accesibilidad</a
+              >
+              <span class="tag is-info">2022</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js"></script>
+
+    <script>
+      window.addEventListener("resize", () => {
+        const divs = document.querySelectorAll(".menu-list");
+        if (window.innerWidth < 768) {
+          divs.forEach((div) => div.classList.add("tags"));
+        } else {
+          divs.forEach((div) => div.classList.remove("tags"));
+        }
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        //The first argument are the elements to which the plugin shall be initialized
+        //The second argument has to be at least a empty object or a object with your desired options
+        OverlayScrollbars(document.querySelectorAll("body"), {});
+      });
+    </script>
+  </body>
+</html>
